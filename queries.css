@@ -1,0 +1,86 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1200px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 75em) {
+  .card-container {
+    gap: 3.8rem;
+  }
+
+  .card {
+    transform: scale(90%);
+  }
+
+  .features-list {
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+
+/**************************/
+/* BELOW 1100px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 70em) {
+  .card-container {
+    gap: 3.8rem;
+  }
+
+  .features-list {
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin-right: 0;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 60em) {
+  .card-container {
+    gap: 3.8rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    transform: scale(100%);
+  }
+
+  .current-plan-container {
+    bottom: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 6rem;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 40rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: #da415ab0;
+  }
+}
+
+@media (max-width: 28em) {
+  .toggle-container {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .current-plan-container {
+    max-width: 40rem;
+  }
+
+  .card {
+    max-width: 30rem;
+  }
+}

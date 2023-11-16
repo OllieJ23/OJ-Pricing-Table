@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="icon" type="image/x-icon" href="/AM.webp" />
+    <script defer src="script.js"></script>
+    <title>OJ Project 2: Responsive Pricing Table</title>
+  </head>
+  <body>
+    <h1 class="heading-primary">Choose Your Plan</h1>
+    <div class="toggle-container">
+      <p class="toggle-monthly active-toggle">Billed Monthly</p>
+      <div class="switch-container">
+        <input type="checkbox" id="switch" />
+        <label for="switch"></label>
+      </div>
+      <p class="toggle-annual">Billed Annually</p>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h3 class="heading-secondary">Starter</h3>
+        <h2 class="price price-start">£19<span>/ month</span></h2>
+        <ul class="features-list">
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Basic Access to Platform</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Email Support</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Access to Community Forums</li>
+          <ion-icon class="close-icon" name="close"></ion-icon>
+          <br />
+          <ion-icon class="close-icon" name="close"></ion-icon>
+        </ul>
+        <button class="btn btn-starter">Choose Plan</button>
+      </div>
+      <div class="card">
+        <h3 class="heading-secondary">Pro</h3>
+        <h2 class="price price-pro">£59<span>/ month</span></h2>
+        <ul class="features-list">
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Full access to all features</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Priority email support</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Weekly updates</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Basic analytics</li>
+          <ion-icon class="close-icon" name="close"></ion-icon>
+        </ul>
+        <button class="btn btn-pro">Choose Plan</button>
+      </div>
+      <div class="card">
+        <h3 class="heading-secondary">Enterprise</h3>
+        <h2 class="price price-enterprise">£99<span>/ month</span></h2>
+        <ul class="features-list">
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> All Pro features</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Dedicated account manager</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> 24/7 premium support</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Custom branding</li>
+          <li><ion-icon class="tick-icon" name="checkmark-outline"></ion-icon> Advanced analytics & reporting</li>
+        </ul>
+        <button class="btn btn-enterprise">Choose Plan</button>
+      </div>
+    </div>
+
+    <div class="current-plan-container">
+      <p>Your current plan:</p>
+      <span class="chosen-plan"></span>
+      <span class="chosen-billing"></span>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
